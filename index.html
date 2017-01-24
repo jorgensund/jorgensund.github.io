@@ -141,6 +141,16 @@
     });
   }
 
+      $.each(allSeries, function(index, series) {
+    if (selected == index) {
+        if (series.visible == true) {
+            series.hide();
+        }
+        else {
+            series.show();
+        }
+    }
+});
   // converts date format from JSON
   function getChartDate(d) {
     // offset in minutes is converted to milliseconds and subtracted so that chart's x-axis is correct
