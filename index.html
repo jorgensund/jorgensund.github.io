@@ -141,6 +141,15 @@
       // add the chart data
       my_chart.addSeries({ data: chart_data, name: data.channel[field_name], color: color });
     });
+
+  
+  }
+
+  // converts date format from JSON
+  function getChartDate(d) {
+    // offset in minutes is converted to milliseconds and subtracted so that chart's x-axis is correct
+    return Date.parse(d) - (my_offset * 60000);
+  }
       // the button action
     var my_chart = $('#container').highcharts(),
         $button = $('#button');
@@ -162,15 +171,6 @@
             $button.html('Hide series');
         }
     });
-  
-  }
-
-  // converts date format from JSON
-  function getChartDate(d) {
-    // offset in minutes is converted to milliseconds and subtracted so that chart's x-axis is correct
-    return Date.parse(d) - (my_offset * 60000);
-  }
-
 </script>
 
 
