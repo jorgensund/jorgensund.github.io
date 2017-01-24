@@ -139,6 +139,16 @@
       // add the chart data
       my_chart.addSeries({ data: chart_data, name: data.channel[field_name], color: color });
     });
+    
+    
+    $('#button').click(function () {
+        var series = chart.series[0];
+        if (series.visible) {
+            series.hide();
+        } else {
+            series.show();
+        }
+    });
   }
 
   // converts date format from JSON
