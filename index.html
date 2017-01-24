@@ -140,7 +140,7 @@
       my_chart.addSeries({ data: chart_data, name: data.channel[field_name], color: color });
     });
       // the button action
-    var chart = $('#container').highcharts(),
+    var chart = $('#chart-container').highcharts(),
         $button = $('#button');
     $button.click(function() {
         var series = chart.series[0];
