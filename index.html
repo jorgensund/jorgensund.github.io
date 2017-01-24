@@ -149,8 +149,6 @@
     return Date.parse(d) - (my_offset * 60000);
   }
       // the button action
-    var chart = $('#chart-container').highcharts(),
-        $button = $('#button');
     $button.click(function() {
         var series = chart.series[0];
         if (series.visible) {
