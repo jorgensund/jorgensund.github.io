@@ -150,7 +150,11 @@
     // offset in minutes is converted to milliseconds and subtracted so that chart's x-axis is correct
     return Date.parse(d) - (my_offset * 60000);
   }
-
+            // apply the date pickers
+            setTimeout(function() {
+                $('input.highcharts-range-selector', $('#' + my_chart.options.chart.renderTo)).datepicker()
+            }, 0)
+        });
 </script>
 
 
