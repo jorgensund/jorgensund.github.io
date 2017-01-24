@@ -140,16 +140,14 @@
       my_chart.addSeries({ data: chart_data, name: data.channel[field_name], color: color });
     });
   }
-
-      $.each(allSeries, function(index, series) {
-    if (selected == index) {
-        if (series.visible == true) {
+     $('#button').click(function () {
+        var series = chart.series[0];
+        if (series.visible) {
             series.hide();
-        }
-        else {
+        } else {
             series.show();
         }
-    }
+    });     
 });
   // converts date format from JSON
   function getChartDate(d) {
