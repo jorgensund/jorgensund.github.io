@@ -160,24 +160,7 @@
     // offset in minutes is converted to milliseconds and subtracted so that chart's x-axis is correct
     return Date.parse(d) - (my_offset * 60000);
   }
-
- stockChart.setRangeSelector(new RangeSelector()
-    .setButtons(
-       new RangeSelector.Button()
-          .setButtonType(RangeSelector.ButtonType.DAY)
-          .setCount(1)
-          .setText("1d"),
-       new RangeSelector.Button()
-          .setButtonType(RangeSelector.ButtonType.WEEK)
-          .setCount(2)
-          .setText("2w"),
-       new RangeSelector.Button()
-          .setButtonType(RangeSelector.ButtonType.MONTH)
-          .setCount(3)
-          .setText("2m")
-    )
-    .setSelected(1)
-    .setButtonSpacing(10));     
+    
 </script>
 
 
