@@ -109,22 +109,20 @@
       chart: {
         renderTo: 'chart-container',
         defaultSeriesType: 'spline',
-        backgroundColor: '#ffffff',
         zoomType: 'x',
         panning: true,
-        panKey: 'shift'
-        events: {}
-    },h
-    
-      title: { 'text: chart_title },
+        panKey: 'shift',
+        backgroundColor: '#ffffff',
+        events: { }
+      },
+      title: { text: chart_title },
       plotOptions: {
         series: {
           marker: { radius: 1 },
           animation: true,
           step: false,
           borderWidth: 0,
-          turboThreshold: 0,
-          shadow: false
+          turboThreshold: 0
         }
       },
       tooltip: {
