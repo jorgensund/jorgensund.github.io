@@ -110,13 +110,14 @@
             type: 'line',
             panning: true,
             panKey: 'shift',
+            zoomType: 'xy',
             renderTo: 'chart-container'
         },
       
       title: { text: chart_title },
       plotOptions: {
         series: {
-          marker: { radius: 1 },
+          marker: { radius: 0.5 },
           animation: true,
           step: false,
           borderWidth: 0,
@@ -132,7 +133,7 @@
         }
       },
       subtitle: {
-      text: 'Data from last 3 days. 5 minute samples. '
+      text: 'Data from last 3 days. 5 minute samples'
         },
       xAxis: {
         type: 'datetime',
