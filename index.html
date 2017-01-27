@@ -107,12 +107,14 @@
     // specify the chart options
     var chartOptions = {
       chart: {
+        panKey: 'shift',
+        panning: true,
+        zoomType: 'x',
         renderTo: 'chart-container',
         defaultSeriesType: 'spline',
-        backgroundColor: '#ffffff',
-        zoomType: 'x',
-        panKey: 'shift'
+        backgroundColor: '#ffffff'
       },
+      
       title: { text: chart_title },
       plotOptions: {
         series: {
