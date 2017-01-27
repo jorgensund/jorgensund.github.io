@@ -111,6 +111,7 @@
         defaultSeriesType: 'spline',
         backgroundColor: '#ffffff',
         zoomType: 'x',
+        panKey: 'shift',
         events: { }
       },
       title: { text: chart_title },
@@ -121,9 +122,11 @@
           step: false,
           borderWidth: 0,
           turboThreshold: 0,
-          panKey: 'shift',
           shadow: false
         }
+       subtitle: {
+       text: 'Click and drag to zoom in. Hold down shift key to pan.'
+      }
       },
       tooltip: {
         // reformat the tooltips so that local times are displayed
@@ -145,6 +148,7 @@
         href: 'https://thingspeak.com/',
         style: { color: '#D62020' }
       }
+      
     };
 
     // draw the chart
