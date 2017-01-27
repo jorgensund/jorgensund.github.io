@@ -76,7 +76,7 @@
   var series_4_color = '#d67e20';
   
   // chart title
-  var chart_title = 'Growing Chillies 2017 - 5 Minute Data';
+  var chart_title = 'Growing Chillies 2017';
   // y axis title
   var y_axis_title = 'Values';
 
@@ -124,9 +124,6 @@
           turboThreshold: 0,
           shadow: false
         }
-       subtitle: {
-       text: 'Click and drag to zoom in. Hold down shift key to pan.'
-      }
       },
       tooltip: {
         // reformat the tooltips so that local times are displayed
@@ -136,6 +133,9 @@
           return this.series.name + ':<b>' + this.y + '</b>' + n + '<br>' + d.toDateString() + '<br>' + d.toTimeString().replace(/\(.*\)/, "");
         }
       },
+      subtitle: {
+      text: 'Data from last 3 days. 5 minute samples. '
+        },
       xAxis: {
         type: 'datetime',
         title: { text: 'Date' }
